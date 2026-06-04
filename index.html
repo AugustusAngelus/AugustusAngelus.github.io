@@ -1,13 +1,129 @@
 <!doctype html>
-<html lang="en">
+<html lang="sk">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Prax</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Veľké cigánstvo!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Životopis</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .cv-container {
+            max-width: 900px;
+            background-color: #ffffff;
+            margin: 30px auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            border-bottom: 2px solid #0d6efd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #0d6efd;
+        }
+        .job-title {
+            font-weight: 500;
+        }
+        .date-range {
+            font-style: italic;
+            color: #6c757d;
+        }
+        .skill-badge {
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Header -->
+        <div class="text-center mb-4">
+            <h1 class="fw-bold">Meno Priezvisko</h1>
+            <p>
+                Mesto, Slovensko | <a href="mailto:email@example.com">email@example.com</a> | +421 900 000 000 | <a href="#">LinkedIn/Portfolio</a>
+            </p>
+        </div>
+
+        <!-- Profil / O mne -->
+        <div class="mb-4">
+            <h2 class="section-title">Profil</h2>
+            <p>Skúsený profesionál s viacročnou praxou v oblasti [tvoja oblasť]. Silné analytické schopnosti, tímová spolupráca a schopnosť riešiť problémy. Hľadám príležitosť rozvíjať svoje schopnosti a prispieť k úspechu tímu.</p>
+        </div>
+
+        <!-- Pracovné skúsenosti -->
+        <div class="mb-4">
+            <h2 class="section-title">Pracovné skúsenosti</h2>
+            <div class="mb-3">
+                <h5 class="job-title">Názov pozície – Firma</h5>
+                <p class="date-range">MM/YYYY – MM/YYYY</p>
+                <ul>
+                    <li>Zodpovednosť alebo úspech 1</li>
+                    <li>Zodpovednosť alebo úspech 2</li>
+                    <li>Zodpovednosť alebo úspech 3</li>
+                </ul>
+            </div>
+            <div class="mb-3">
+                <h5 class="job-title">Názov pozície – Firma</h5>
+                <p class="date-range">MM/YYYY – MM/YYYY</p>
+                <ul>
+                    <li>Zodpovednosť alebo úspech 1</li>
+                    <li>Zodpovednosť alebo úspech 2</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Vzdelanie -->
+        <div class="mb-4">
+            <h2 class="section-title">Vzdelanie</h2>
+            <div class="mb-3">
+                <h5>Škola / Univerzita – Odbor</h5>
+                <p class="date-range">MM/YYYY – MM/YYYY</p>
+                <p>Titul, ocenenia, projekty (ak relevantné)</p>
+            </div>
+        </div>
+
+        <!-- Zručnosti -->
+        <div class="mb-4">
+            <h2 class="section-title">Zručnosti</h2>
+            <div>
+                <span class="badge bg-primary skill-badge">HTML/CSS</span>
+                <span class="badge bg-primary skill-badge">JavaScript</span>
+                <span class="badge bg-primary skill-badge">Bootstrap 5</span>
+                <span class="badge bg-primary skill-badge">Excel</span>
+                <span class="badge bg-primary skill-badge">Komunikácia</span>
+            </div>
+        </div>
+
+        <!-- Jazyky -->
+        <div class="mb-4">
+            <h2 class="section-title">Jazyky</h2>
+            <ul>
+                <li>Slovenčina – rodný jazyk</li>
+                <li>Angličtina – pokročilá</li>
+                <li>Nemčina – stredne pokročilá</li>
+            </ul>
+        </div>
+
+        <!-- Certifikáty -->
+        <div class="mb-4">
+            <h2 class="section-title">Certifikáty</h2>
+            <ul>
+                <li>Názov certifikátu – Inštitúcia (Rok)</li>
+                <li>Názov certifikátu – Inštitúcia (Rok)</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-5 text-muted">
+            <small>Životopis vytvorený profesionálne pomocou Bootstrap 5.3</small>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (voliteľné) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
